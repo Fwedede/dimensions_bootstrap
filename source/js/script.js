@@ -11,13 +11,13 @@ $(function() {
 		that.addClass('actif');
 
 		if(/suis/.test(that.text()))
-			bg = 'rgb(190,0,31)';
+			bg = 'rgb(204,0,51)';
 		else if(/éali/.test(that.text()))
-			bg = 'rgb(1,184,130)';
+			bg = 'rgb(0,204,153)';
 		else if(/vice/.test(that.text()))
-			bg = 'rgb(245,194,14)';
+			bg = 'rgb(255,204,0)';
 		else if(/tact/.test(that.text()))
-			bg = 'rgb(0,122,148)';
+			bg = 'rgb(0,102,153)';
 		else
 			bg = 'rgb(255,255,255)';
 
