@@ -68,7 +68,7 @@ html{font-size:125%;}
 .reseau-soc .img{width:32px;height:auto;border-radius:3px;position:relative;top:.5rem;-webkit-animation: second 200ms linear 0s 1 alternate running; /* Chrome, Safari, Opera */-moz-animation: second 200ms linear 0s 1 alternate running; /* Mozilla */-ms-animation: second 200ms linear 0s 1 alternate running; /* Internet Explorer */-o-animation: second 200ms linear 0s 1 alternate running; /* Opera */animation: second 200ms linear 0s 1 alternate running; /* 3WC */}
 .reseau-soc .img:hover{top:0;-webkit-animation: myfirst 200ms linear 0s 1 alternate running; /* Chrome, Safari, Opera */-moz-animation: myfirst 200ms linear 0s 1 alternate running; /* Mozilla */-ms-animation: myfirst 200ms linear 0s 1 alternate running; /* Internet Explorer */-o-animation: myfirst 200ms linear 0s 1 alternate running; /* Opera */animation: myfirst 200ms linear 0s 1 alternate running; /* 3WC */}
 .menu{text-align:right;}
-.menu .link{display:inline-block;padding:.3rem .6rem;border:2px solid transparent;height:3rem;line-height:3rem;z-index:1000;}
+.menu .link{display:inline-block;padding:.3rem .6rem;height:3rem;line-height:2.7rem;z-index:1000;}
 .menu .link.actif{border-bottom-color:rgb(225,225,225);z-index:10;}
 
 .check{display:inline-block;height:3rem;width:5rem;position:absolute;bottom:0;right:0;background-color:green;z-index:100;}
@@ -106,4 +106,3 @@ html{font-size:125%;}
 /*.form .area.new-clr{color:rgb(0,0,0);}*/
 .form .compteur{text-align:right;}
 .form .form-input[type=button], .form .btn, .form .form-input[type=reset], .form .form-input[type=submit]{box-shadow:0 -3px rgba(0,0,0,0.5) inset;border:0;text-align:center;cursor:pointer;}
->>>>>>> origin/master
