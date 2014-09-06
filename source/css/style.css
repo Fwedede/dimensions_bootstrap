@@ -35,6 +35,7 @@ html{font-size:125%;}
 .block{margin-bottom:2rem;}
 .title{font-weight:bold;}
 .float{float:left;}
+.right {float:right;}
 
 .font-normal{font-weight:normal;font-style:none;text-decoration:none;}
 .font-bold{font-weight:bold;}
@@ -65,6 +66,7 @@ html{font-size:125%;}
 .bg-black{background-color:rgb(0,0,0);}
 .bg-blue{background-color:rgb(0,0,191);}
 .bg-gray{background-color:rgb(31,31,31);}
+.bg-gray2{background-color:rgb(102,102,102);}
 .bg-green{background-color:rgb(0,159,0);}
 .bg-grey{background-color:rgb(128,128,128);}
 .bg-orange{background-color:rgb(217,159,0);}
@@ -73,22 +75,25 @@ html{font-size:125%;}
 .bg-white{background-color:rgb(255,255,255);}
 .bg-main{background-color:rgb(225,225,225);}
 
-.centre{padding:2rem 7.5%;position:relative;width:100%;}
+.centre{padding:0rem 8%;position:relative;width:100%;}
 .list{list-style:none;margin-left:1rem;}
 
 
 
 /*****	HEADER
 *****/
-.header{padding:8%;border-bottom:2px solid transparent;}
+.header{padding:8%;}
 .header .title{text-align:center;width:100%;}
 .header .txt {color:white;text-align:center;font-size:2.4rem;}
 .header .title .img{height:auto;width:80%;margin:2rem 0;}
-.menu{position:relative;top:2px;font-weight:bold;}
-.menu .link{display:inline-block;padding:.3rem .6rem;border:2px solid transparent;}
+.nav{font-weight:bold;background-color:rgb(255,255,255);}
+.nav .logo {position:relative;top:2;display:inline-block;}
+.menu {display:inline-block;}
+.menu .link{display:inline-block;padding:1rem;}
 .menu .link.actif{border-bottom-color:rgb(225,225,225);z-index:10;position:relative;}
-.menu .link:not(.actif){background-color:rgb(190,190,190);}
+.menu .link:not(.actif){background-color:rgb(255,255,255);color:rgb(102,102,102);}
 .menu .link:not(.actif):hover{background-color:rgb(215,215,215);}
+
 .reseau-soc{position:absolute;right:7.5%;bottom:-6px;}
 .reseau-soc .img{width:32px;height:auto;border-radius:3px;position:relative;top:.5rem;-webkit-animation: second 200ms linear 0s 1 alternate running; /* Chrome, Safari, Opera */-moz-animation: second 200ms linear 0s 1 alternate running; /* Mozilla */-ms-animation: second 200ms linear 0s 1 alternate running; /* Internet Explorer */-o-animation: second 200ms linear 0s 1 alternate running; /* Opera */animation: second 200ms linear 0s 1 alternate running; /* 3WC */}
 .reseau-soc .img:hover{top:0;-webkit-animation: myfirst 200ms linear 0s 1 alternate running; /* Chrome, Safari, Opera */-moz-animation: myfirst 200ms linear 0s 1 alternate running; /* Mozilla */-ms-animation: myfirst 200ms linear 0s 1 alternate running; /* Internet Explorer */-o-animation: myfirst 200ms linear 0s 1 alternate running; /* Opera */animation: myfirst 200ms linear 0s 1 alternate running; /* 3WC */}
