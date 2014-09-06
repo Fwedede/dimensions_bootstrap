@@ -64,7 +64,7 @@ html{font-size:125%;}
 .menu .link:not(.actif){color:rgb(102,102,102);}
 .menu .link:not(.actif):hover{background-color:rgb(215,215,215);}
 
-.check{display:inline-block;height:3rem;width:5rem;position:absolute;bottom:0;right:0;background-color:#60f;z-index:100;right:8%;top:0;}
+.check{display:inline-block;height:3rem;width:5rem;position:absolute;bottom:0;right:0;z-index:100;right:8%;top:0;}
 
 
 
