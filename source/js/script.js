@@ -3,13 +3,11 @@ $(function() {
 		event.preventDefault();
 
 		var that = $(this),
-			thisLeft = that.offset().left;
+			thisLeft = that.offset().left,
+			thisWidth = parseInt(that.css('width')),
+			checkLeft = $('.check').offset().left;
 
-		thisPadding = parseInt(that.css('padding-left')) * 2;
-		thisWidth = parseInt(that.css('width'));
-		thisBorder = parseInt(that.css('border-left-width')) * 2;
-
-		$('.check').animate({
+		$('.check').css('left',checkLeft).animate({
 			'left' : thisLeft,
 			'width' : thisWidth
 		});
