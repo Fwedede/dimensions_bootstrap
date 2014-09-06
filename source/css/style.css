@@ -1,4 +1,10 @@
 /*****	Initialisation
 *****/
-*{-webkit-box-sizing:border-box;-moz-box-sizing:border-box;-ms-box-sizing:border-box;-o-box-sizing:border-box;box-sizing:border-box;margin:0;padding:0;outline:none;border:0;}
+*{-webkit-box-sizing:border-box;-moz-box-sizing:border-box;-ms-box-sizing:border-box;-o-box-sizing:border-box;box-sizing:border-box;margin:0;padding:0;outline:none;border:0;font-family:'Exo';}
 ul, ol{list-style:none;}
+
+body{background-color:rgb(87,90,93);}
+
+section{text-align:center;}
+div{font-size:400%;color:white;}
+h1{margin:auto;}
