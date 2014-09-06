@@ -48,7 +48,7 @@ html{font-size:125%;}
 .bg-white{background-color:rgb(255,255,255);}
 .bg-main{background-color:rgb(225,225,225);}
 
-
+.body{position:fixed;top:0; margin: 0 auto;opacity:0.3;}
 
 /*****	HEADER
 *****/
@@ -60,13 +60,14 @@ html{font-size:125%;}
 .nav .logo {position:relative;top:2;display:inline-block;}
 .menu{display:inline-block;text-align:right;}
 .menu .link{display:inline-block;padding:.3rem .6rem;height:3rem;line-height:2.7rem;z-index:1000;position:relative;}
-.menu .link.actif{position:relative;}
+.menu .link.actif{position:relative;color:white;}
 .menu .link:not(.actif){color:rgb(102,102,102);}
 .menu .link:not(.actif):hover{background-color:rgb(215,215,215);}
 
 .check{display:inline-block;height:3rem;width:5rem;position:absolute;bottom:0;right:0;z-index:100;right:8%;top:0;}
 
-
+/* QUI SUIS JE */
+.qui-suis-je {background-color:rgb(204,0,51);}
 
 
 
