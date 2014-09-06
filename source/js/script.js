@@ -7,10 +7,15 @@ $(function() {
 			thisWidth = parseInt(that.css('width')),
 			checkLeft = $('.check').offset().left;
 
-		$('.check').css('left',checkLeft).animate({
-			'left' : thisLeft,
-			'width' : thisWidth
-		});
+		$('.menu .link').removeClass('actif');
+		that.addClass('actif');
+
+		$('.check')
+			.css('left',checkLeft)
+			.animate({
+				'left' : thisLeft,
+				'width' : thisWidth
+			});
 	});
 
 });
