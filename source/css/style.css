@@ -49,7 +49,10 @@ html{font-size:125%;}
 
 .body{position:fixed;top:0; width:100%;text-align:center;}
 
-.chart {display: inline-block;}
+.mini_perform{padding:1rem;width: 54%;background-color: rgb(255,255,255);box-shadow: .1rem .1rem .2rem rgb(128,128,128)}
+.chart {display: inline-block;width: 80px;height:80px;margin: 0.2rem;}
+.chart canvas {position: absolute;z-index: 10;}
+.chart img {position: absolute;z-index: 5;}
 /*.mini_perform{background-color: white;}
 
 /*****	HEADER

@@ -82,8 +82,8 @@ function apparence() {
 }
 function charge(){
 	$('#performances .mini_perform .chart').easyPieChart({
-		barColor: '#f2f2f2',
-		trackColor: 'rgb(82,82,82)',
+		barColor: 'rgb(204,0,51)',
+		trackColor: 'rgb(204,204,204)',
 		scaleColor: false,
 		lineCap: 'butt',
 		lineWidth: 5,
