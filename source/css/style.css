@@ -3,7 +3,6 @@
 *{-moz-box-sizing:border-box;-o-box-sizing:border-box;-ms-box-sizing:border-box;-webkit-box-sizing:border-box;box-sizing:border-box;margin:0;padding:0;outline:none;font-family:'Exo';}
 html{font-size:125%;}
 
-.block{margin-bottom:2rem;}
 .title{font-weight:bold;}
 .float{float:left;}
 .right {float:right;}
@@ -67,18 +66,23 @@ html{font-size:125%;}
 .check{display:inline-block;height:3rem;width:5rem;position:absolute;bottom:0;right:0;z-index:100;right:8%;top:0;}
 
 /* BLOCK */
-.section {text-align:center;width:100%;min-height:10rem;padding:2rem 0;}
+.section {text-align:center;width:100%;min-height:10rem;padding-top:2rem;}
 .section .title {font-size:2.5rem;}
 .block {width:70%;color:rgb(255,255,255);margin:0 auto;}
 .hr {border:2px solid rgb(255,255,255);margin:1.4rem 0;}
 
 /* QUI SUIS JE */
 .qui-suis-je {background-color:rgb(204,0,51);}
-.qui-suis-je .article {width:29.2rem;text-align:left;display:inline-block;vertical-align:top;}
-.qui-suis-je .photo {position:relative;height:562px;display:inline-block;top:-1.4rem}
+.qui-suis-je .article {text-align:left;display:table-cell;vertical-align:top;}
+.qui-suis-je .photo {height:562px;display:table-cell;padding-left: 1rem;}
 
 /* REALISATIONS */
 .realisations {background-color:rgb(0,204,153);}
+.tab{width: 100%;}
+.tab .colonne {width:32%;display: inline-block;}
+.tab .cell {display: block;margin: 0.2rem;width: 100%;}
+.tab .size1 {height: 9rem;}
+.tab .size2 {height: 15rem;}
 
 /* SERVICES */
 .services {background-color:rgb(255,204,0);}
