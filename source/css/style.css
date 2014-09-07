@@ -65,7 +65,7 @@ html{font-size:125%;}
 .nav .logo {position:relative;top:2;display:inline-block;}
 .menu{display:inline-block;text-align:right;font-size: 1rem;}
 .menu .link{display:inline-block;padding:.3rem .6rem;height:3rem;line-height:2.7rem;z-index:1000;position:relative;}
-.menu .link.actif{position:relative;color:white;}
+.menu .link.actif{position:relative;color:white;text-decoration: none;}
 .menu .link:not(.actif){color:rgb(102,102,102);}
 .menu .link:not(.actif):hover{background-color:rgb(215,215,215);text-decoration: none;}
 

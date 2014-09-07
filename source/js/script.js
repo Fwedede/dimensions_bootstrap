@@ -14,6 +14,7 @@ function menuClick() {
 			sectionTop = $('#services').offset().top;
 		else if(/tact/.test(that.text()))
 			sectionTop = $('#contact').offset().top;
+		
 
 		$('.check')
 			.css('left', $('.check').offset().left)
