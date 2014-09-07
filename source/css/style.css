@@ -49,6 +49,9 @@ html{font-size:125%;}
 
 .body{position:fixed;top:0; width:100%;text-align:center;}
 
+.chart {display: inline-block;}
+/*.mini_perform{background-color: white;}
+
 /*****	HEADER
 *****/
 .header{padding:8%;}
@@ -66,7 +69,7 @@ html{font-size:125%;}
 .check{display:inline-block;height:3rem;width:5rem;position:absolute;bottom:0;right:0;z-index:100;right:8%;top:0;}
 
 /* BLOCK */
-.section {text-align:center;width:100%;min-height:10rem;padding:2rem 0;position:relative;}
+.section {text-align:center;width:100%;min-height:10rem;padding:2rem 0;position:relative;font-size: 0.8rem;}
 .section .title {font-size:2.5rem;}
 .block {width:70%;color:rgb(255,255,255);margin:0 auto;}
 .hr {border:2px solid rgb(255,255,255);margin:1.4rem 0;}

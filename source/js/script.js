@@ -28,6 +28,7 @@ function menuClick() {
 function apparence() {
 	$('.header, .section').css('min-height', windowHeight);
 
+
 	$(window).scroll(function() {
 		if($(window).scrollTop() >= windowHeight) {
 			$('.nav').css({
@@ -85,4 +86,17 @@ windowHeight = $(window).height();
 $(function() {
 	menuClick();
 	apparence();
+});
+
+
+$(function() {
+	$('#performances .mini_perform .chart').easyPieChart({
+		barColor: '#f2f2f2',
+		trackColor: 'rgb(82,82,82)',
+		scaleColor: false,
+		lineCap: 'butt',
+		lineWidth: 5,
+		size: 80,
+		animate: 5000
+	});			
 });
