@@ -41,7 +41,6 @@ function apparence() {
 		else {
 			$('.nav').css('position','relative');
 			$('.section').css('top', 0);
-			$('.menu .link').removeClass('actif');
 		}
 
 		$('.menu .link').removeClass('actif');
@@ -67,6 +66,7 @@ function apparence() {
 		else if($(window).scrollTop() >= $('.qui-suis-je').offset().top - parseInt($('.section').css('top'))) {
 			that = $('.menu .link[href=#qui-suis-je]');
 			bg = 'rgb(204,0,51)';
+			charge();
 			
 			that.addClass('actif');
 		}
@@ -80,16 +80,7 @@ function apparence() {
 			});
 	});
 }
-
-windowHeight = $(window).height();
-
-$(function() {
-	menuClick();
-	apparence();
-});
-
-
-$(function() {
+function charge(){
 	$('#performances .mini_perform .chart').easyPieChart({
 		barColor: '#f2f2f2',
 		trackColor: 'rgb(82,82,82)',
@@ -98,5 +89,11 @@ $(function() {
 		lineWidth: 5,
 		size: 80,
 		animate: 5000
-	});			
+	});
+}
+
+windowHeight = $(window).height();
+$(function() {
+	menuClick();
+	apparence();
 });
