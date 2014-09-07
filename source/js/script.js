@@ -43,28 +43,35 @@ function apparence() {
 			$('.menu .link').removeClass('actif');
 		}
 
+		$('.menu .link').removeClass('actif');
 
 		if($(window).scrollTop() >= $('.contact').offset().top - parseInt($('.section').css('top'))) {
 			that = $('.menu .link[href=#contact]');
 			bg = 'rgb(0,102,153)';
+			
+			that.addClass('actif');
 		}
 		else if($(window).scrollTop() >= $('.services').offset().top - parseInt($('.section').css('top'))) {
 			that = $('.menu .link[href=#services]');
 			bg = 'rgb(255,204,0)';
+			
+			that.addClass('actif');
 		}
 		else if($(window).scrollTop() >= $('.realisations').offset().top - parseInt($('.section').css('top'))) {
 			that = $('.menu .link[href=#realisations]');
 			bg = 'rgb(0,204,153)';
+			
+			that.addClass('actif');
 		}
 		else if($(window).scrollTop() >= $('.qui-suis-je').offset().top - parseInt($('.section').css('top'))) {
 			that = $('.menu .link[href=#qui-suis-je]');
 			bg = 'rgb(204,0,51)';
+			
+			that.addClass('actif');
 		}
 		else
 			bg = 'rgb(255,255,255)';
 
-		$('.menu .link').removeClass('actif');
-		that.addClass('actif');
 		$('.check')
 			.css({
 				'background-color' : bg,
