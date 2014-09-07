@@ -1,5 +1,7 @@
+windowHeight = $(window).height();
+
 function menuClick() {
-	$('.menu .link').click(function(event) {
+	$('.link').click(function(event) {
 		event.preventDefault();
 
 		var that = $(this),
@@ -14,6 +16,8 @@ function menuClick() {
 			sectionTop = $('#services').offset().top;
 		else if(/tact/.test(that.text()))
 			sectionTop = $('#contact').offset().top;
+		else
+			sectionTop = 0;
 		
 
 		$('.check')
@@ -27,57 +31,56 @@ function menuClick() {
 	});
 }
 function apparence() {
-	$('.header, .section').css('min-height', windowHeight);
+	$('.section').css('min-height', windowHeight); // Chaque "page" fait la totalité de l'écran
 
-
-	$(window).scroll(function() {
+	$(window).scroll(function() { // Dès qu'on scroll sur le site
 		if($(window).scrollTop() >= windowHeight) {
-			$('.nav').css({
-				'position' : 'fixed',
-				'top' : 0
-			});
-
-			$('.section').css('top', $('.nav').height());
+			$('.nav').css('position', 'fixed'); // Le menu devient fixe
+			$('.section').css('top', $('.nav').height()); // On baisse les "pages" pour qu'elles soit a la bonne hauteur
 		}
 		else {
-			$('.nav').css('position','relative');
-			$('.section').css('top', 0);
+			$('.nav').css('position','relative'); // Le menu redevient relatif
+			$('.section').css('top', 0); // Remise a la bonne hauteur des "pages"
 		}
 
-		$('.menu .link').removeClass('actif');
+		var sectionPadd = parseInt($('.section').css('top'));
+		$('.link').removeClass('actif');
 
-		if($(window).scrollTop() >= $('.contact').offset().top - parseInt($('.section').css('top'))) {
-			that = $('.menu .link[href=#contact]');
+		if($(window).scrollTop() >= $('main .section:nth-child(4)').offset().top - sectionPadd) {
+			that = $('.menu .link:nth-child(4)');
+			sectionTop = $('main .section:nth-child(4)').offset().top;
 			bg = 'rgb(0,102,153)';
-			
-			that.addClass('actif');
 		}
-		else if($(window).scrollTop() >= $('.services').offset().top - parseInt($('.section').css('top'))) {
-			that = $('.menu .link[href=#services]');
+		else if($(window).scrollTop() >= $('main .section:nth-child(3)').offset().top - sectionPadd) {
+			that = $('.menu .link:nth-child(3)');
+			sectionTop = $('main .section:nth-child(3)').offset().top;
 			bg = 'rgb(255,204,0)';
-			
-			that.addClass('actif');
 		}
-		else if($(window).scrollTop() >= $('.realisations').offset().top - parseInt($('.section').css('top'))) {
-			that = $('.menu .link[href=#realisations]');
+		else if($(window).scrollTop() >= $('main .section:nth-child(2)').offset().top - sectionPadd) {
+			that = $('.menu .link:nth-child(2)');
+			sectionTop = $('main .section:nth-child(2)').offset().top;
 			bg = 'rgb(0,204,153)';
-			
-			that.addClass('actif');
 		}
-		else if($(window).scrollTop() >= $('.qui-suis-je').offset().top - parseInt($('.section').css('top'))) {
-			that = $('.menu .link[href=#qui-suis-je]');
+		else if($(window).scrollTop() >= $('main .section:nth-child(1)').offset().top - sectionPadd) {
+			that = $('.menu .link:nth-child(1)');
+			sectionTop = $('main .section:nth-child(1)').offset().top;
 			bg = 'rgb(204,0,51)';
 			charge();
-			
-			that.addClass('actif');
 		}
-		else
-			bg = 'rgb(255,255,255)';
+		else {
+			that = $('.logo .link');
+			bg = 'transparent';
+		}
+		
+		that.addClass('actif');
+		thatLeft = that.offset().left;
+		thatWidth = parseInt(that.css('width'));
 
 		$('.check')
 			.css({
 				'background-color' : bg,
-				'left' : $('.check').offset().left
+				'width' : thatWidth,
+				'left' : thatLeft
 			});
 	});
 }
@@ -93,7 +96,6 @@ function charge(){
 	});
 }
 
-windowHeight = $(window).height();
 $(function() {
 	menuClick();
 	apparence();

@@ -57,11 +57,11 @@ html{font-size:125%;}
 
 /*****	HEADER
 *****/
-.header{padding:8%;}
+.header{padding:0 8%;}
 .header .title{text-align:center;width:100%;}
 .header .txt {color:white;text-align:center;font-size:2.4rem;}
 .header .title .img{height:auto;width:80%;margin:2rem 0;}
-.nav{font-weight:bold;background-color:rgb(255,255,255);position:relative;height:3rem;z-index:999;}
+.nav{font-weight:bold;background-color:rgb(255,255,255);position:relative;height:3rem;z-index:999;top:0;}
 .nav .logo {position:relative;top:2;display:inline-block;}
 .menu{display:inline-block;text-align:right;font-size: 1rem;}
 .menu .link{display:inline-block;padding:.3rem .6rem;height:3rem;line-height:2.7rem;z-index:1000;position:relative;}
