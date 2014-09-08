@@ -71,7 +71,7 @@ function apparence() {
 			that = $('.logo .link');
 			bg = 'transparent';
 		}
-		
+
 		that.addClass('actif');
 		thatLeft = that.offset().left;
 		thatWidth = parseInt(that.css('width'));
@@ -95,15 +95,12 @@ function charge(){
 		animate: 5000
 	});
 }
-$(function(){
-	$('.mini_perform a').tooltip({
-		délai: {show: 500, hide: 100}
-	});
-});
-
-
 
 $(function() {
 	menuClick();
 	apparence();
+
+	$('.mini_perform a').tooltip({
+		délai: {show: 500, hide: 100}
+	});
 });

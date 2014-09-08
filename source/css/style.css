@@ -56,9 +56,9 @@ html{font-size:125%;}
 
 /* HEADER */
 .header{padding:0 8%;}
-.header .title{text-align:center;width:100%;}
+.header .title{text-align:center;width:100%;border-bottom:3px solid white;}
 .header .txt{color:white;text-align:center;font-size:2.4rem;}
-.header .title .img{height:auto;width:80%;margin:2rem 0;}
+.header .title .img{height:auto;width:100%;margin:2rem 0;}
 .nav{font-weight:bold;background-color:rgb(255,255,255);position:relative;height:3rem;z-index:999;top:0;}
 .nav .logo{position:relative;top:2;display:inline-block;}
 .menu{display:inline-block;text-align:right;font-size:1rem;}
