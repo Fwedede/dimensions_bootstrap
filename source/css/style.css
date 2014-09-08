@@ -46,12 +46,12 @@ html{font-size:125%;}
 .bg-white{background-color:rgb(255,255,255);}
 .bg-main{background-color:rgb(225,225,225);}
 
-.body{position:fixed;top:0; width:100%;text-align:center;z-index: 4;}
+.body{position:fixed;top:0; width:100%;text-align:center;z-index: 10;}
 
-.mini_perform{padding:1rem;width:54%;background-color:rgb(255,255,255);box-shadow:.1rem .1rem .2rem rgb(128,128,128);position: relative;;z-index: 10;}
+.mini_perform{padding:1rem;width:54%;background-color:rgb(255,255,255);box-shadow:.1rem .1rem .2rem rgb(128,128,128);position:relative;z-index:100;}
 .chart{display:inline-block;width:80px;height:80px;margin:0.2rem;}
-.chart canvas{position:absolute;z-index:10;}
-.chart img{position:absolute;z-index:5;}
+.chart canvas{position:absolute;z-index:20;}
+.chart img{position:absolute;z-index:15;}
 
 
 /* HEADER */
@@ -59,7 +59,7 @@ html{font-size:125%;}
 .header .title{text-align:center;width:100%;border-bottom:3px solid white;}
 .header .txt{color:white;text-align:center;font-size:2.4rem;}
 .header .title .img{height:auto;width:100%;margin:2rem 0;}
-.nav{font-weight:bold;background-color:rgb(255,255,255);position:relative;height:3rem;z-index:999;top:0;}
+.nav{font-weight:bold;background-color:rgb(255,255,255);position:relative;height:3rem;z-index:1000;top:0;}
 .nav .logo{position:relative;top:2;display:inline-block;z-index: 1000;}
 .menu{display:inline-block;text-align:right;font-size:1rem;}
 .menu .link{display:inline-block;padding:.3rem .6rem;height:3rem;line-height:2.7rem;z-index:1000;position:relative;}
@@ -75,7 +75,7 @@ html{font-size:125%;}
 
 
 /* BLOCK */
-.section{text-align:center;width:100%;padding:2rem 0;position:relative;font-size:1rem;z-index: 10;}
+.section{text-align:center;width:100%;padding:2rem 0;position:relative;font-size:1rem;z-index:15;}
 .section .title{font-size:2.5rem;}
 .block{width:70%;color:rgb(255,255,255);margin:0 auto;}
 .hr{border:2px solid rgb(255,255,255);margin:1.4rem 0;}
@@ -84,7 +84,7 @@ html{font-size:125%;}
 /* QUI SUIS JE */
 .qui-suis-je{background-color:rgb(204,0,51);}
 .qui-suis-je .article{text-align:left;width:80%;}
-.qui-suis-je .photo{height:562px;position:absolute;top:0px;right:0px;}
+.qui-suis-je .photo{height:100%;position:absolute;top:0px;right:0px;}
 
 
 /* REALISATIONS */
