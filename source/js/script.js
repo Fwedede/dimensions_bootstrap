@@ -4,30 +4,28 @@ function menuClick() {
 	$('.link').click(function(event) {
 		event.preventDefault();
 
-		var that = $(this),
-			thisLeft = that.offset().left,
-			thisWidth = parseInt(that.css('width'));
-
-		if(/suis/.test(that.text()))
-			sectionTop = $('#qui-suis-je').offset().top;
-		else if(/éali/.test(that.text()))
-			sectionTop = $('#realisations').offset().top;
-		else if(/vice/.test(that.text()))
-			sectionTop = $('#services').offset().top;
-		else if(/tact/.test(that.text()))
-			sectionTop = $('#contact').offset().top;
-		else
+		var thisLeft = $(this).offset().left,
+			thisWidth = parseInt($(this).css('width')),
 			sectionTop = 0;
+
+		if(/suis/.test($(this).text()))
+			sectionTop = $('#qui-suis-je').offset().top;
+		else if(/éali/.test($(this).text()))
+			sectionTop = $('#realisations').offset().top;
+		else if(/vice/.test($(this).text()))
+			sectionTop = $('#services').offset().top;
+		else if(/tact/.test($(this).text()))
+			sectionTop = $('#contact').offset().top;
 		
 
 		$('.check')
 			.css('left', $('.check').offset().left)
 			.animate({
-				'left' : thisLeft,
-				'width' : thisWidth
+				'left': thisLeft,
+				'width': thisWidth
 			});
 
-		$('html,body').animate({scrollTop : sectionTop - $('.nav').height() - parseInt($('.section').css('padding-top')) }, 800);
+		$('html,body').animate({scrollTop: sectionTop - $('.nav').height() - parseInt($('.section').css('padding-top')) }, 800);
 	});
 }
 function apparence() {
@@ -43,33 +41,24 @@ function apparence() {
 			$('.section').css('top', 0); // Remise a la bonne hauteur des "pages"
 		}
 
-		var sectionPadd = parseInt($('.section').css('top'));
+		var sectionPadd = parseInt($('.section').css('top')),
+			i = 4,
+			ok = false;
+
 		$('.link').removeClass('actif');
 
-		if($(window).scrollTop() >= $('main .section:nth-child(4)').offset().top - sectionPadd) {
-			that = $('.menu .link:nth-child(4)');
-			sectionTop = $('main .section:nth-child(4)').offset().top;
-			bg = 'rgb(0,102,153)';
-		}
-		else if($(window).scrollTop() >= $('main .section:nth-child(3)').offset().top - sectionPadd) {
-			that = $('.menu .link:nth-child(3)');
-			sectionTop = $('main .section:nth-child(3)').offset().top;
-			bg = 'rgb(255,204,0)';
-		}
-		else if($(window).scrollTop() >= $('main .section:nth-child(2)').offset().top - sectionPadd) {
-			that = $('.menu .link:nth-child(2)');
-			sectionTop = $('main .section:nth-child(2)').offset().top;
-			bg = 'rgb(0,204,153)';
-		}
-		else if($(window).scrollTop() >= $('main .section:nth-child(1)').offset().top - sectionPadd) {
-			that = $('.menu .link:nth-child(1)');
-			sectionTop = $('main .section:nth-child(1)').offset().top;
-			bg = 'rgb(204,0,51)';
-			charge();
-		}
-		else {
-			that = $('.logo .link');
-			bg = 'transparent';
+		while(ok == false) {
+			if(i == 0) {
+				that = $('.logo .link');
+				bg = 'transparent';
+				ok = i;
+			}
+			else if($(window).scrollTop() >= $('main .section:nth-child('+i+')').offset().top - sectionPadd) {
+				that = $('.menu .link:nth-child('+i+')');
+				bg = $('main .section:nth-child('+i+')').css('background-color');
+				ok = i;
+			}
+			i--;
 		}
 
 		that.addClass('actif');
