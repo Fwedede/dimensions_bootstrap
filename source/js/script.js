@@ -59,7 +59,6 @@ function apparence() {
 				}
 			}
 			else {
-				console.log(i);
 				that = $('.logo .link');
 				bg = 'transparent';
 				ok = i;
@@ -94,6 +93,10 @@ function charge(){
 $(function() {
 	menuClick();
 	apparence();
+
+	$('.cell').popover({
+		delay: { "show": 100, "hide": 100 }
+	});
 
 	$('.mini_perform a').tooltip({
 		délai: {show: 500, hide: 100}
