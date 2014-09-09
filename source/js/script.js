@@ -48,10 +48,10 @@ function apparence() {
 		$('.link').removeClass('actif');
 
 		while(ok == false) {
-			if(i == 1)
-				charge();
-
 			if(i > 0) {
+				if(i == 1)
+					charge();
+
 				if($(window).scrollTop() >= $('main .section:nth-child('+i+')').offset().top - sectionPadd) {
 					that = $('.menu .link:nth-child('+i+')');
 					bg = $('main .section:nth-child('+i+')').css('background-color');
