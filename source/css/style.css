@@ -89,6 +89,7 @@ html{font-size:125%;}
 #realisations .tab .size2{height:15rem;}
 
 .popover {border-radius:0px;width:100%;max-width:100%;}
+.popover-content {color:#000;}
 /* SERVICES */
 
 /* CONTACT */

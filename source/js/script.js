@@ -5,8 +5,8 @@ function menuClick() {
 		event.preventDefault();
 
 		var thisLeft = $(this).offset().left,
-			thisWidth = parseInt($(this).css('width')),
-			sectionTop = 0;
+		thisWidth = parseInt($(this).css('width')),
+		sectionTop = 0;
 
 		if(/suis/.test($(this).text()))
 			sectionTop = $('#qui-suis-je').offset().top;
@@ -19,11 +19,11 @@ function menuClick() {
 		
 
 		$('.check')
-			.css('left', $('.check').offset().left)
-			.animate({
-				'left': thisLeft,
-				'width': thisWidth
-			});
+		.css('left', $('.check').offset().left)
+		.animate({
+			'left': thisLeft,
+			'width': thisWidth
+		});
 
 		$('html,body').animate({scrollTop: sectionTop - $('.nav').height()}, 800);
 	});
@@ -42,8 +42,8 @@ function apparence() {
 		}
 
 		var sectionPadd = parseInt($('.section').css('top')),
-			i = 4,
-			ok = false;
+		i = 4,
+		ok = false;
 
 		$('.link').removeClass('actif');
 
@@ -71,11 +71,11 @@ function apparence() {
 		thatWidth = parseInt(that.css('width'));
 
 		$('.check')
-			.css({
-				'background-color' : bg,
-				'width' : thatWidth,
-				'left' : thatLeft
-			});
+		.css({
+			'background-color' : bg,
+			'width' : thatWidth,
+			'left' : thatLeft
+		});
 	});
 }
 function charge(){
@@ -93,12 +93,24 @@ function charge(){
 $(function() {
 	menuClick();
 	apparence();
-
+	
 	$('.cell').popover({
-		delay: { "show": 100, "hide": 100 }
+		delay: { "show": 100, "hide": 100 },            		
 	});
+            	var xhr = new XMLHttpRequest();
+            // On souhaite juste récupérer le contenu du fichier, la méthode GET suffit amplement :
+            xhr.open('GET', 'source/js/realisations.json');
+            xhr.onreadystatechange = function () {
 
+            	$('.cell').click(function() {
+            		$.getJSON('source/js/realisations.json', function(donnees) {
+            			$('.popover-content').html('<p>' + donnees.titre + '</p>');
+            			$('.popover-content').append('<p>' + donnees.desc + '</p>');
+            			$('.popover-content').append('<p>' + donnees.image + '</p>');
+            		});
+});
+            }
 	$('.mini_perform a').tooltip({
-		délai: {show: 500, hide: 100}
+	délai: {show: 500, hide: 100}
 	});
 });
