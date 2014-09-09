@@ -25,7 +25,7 @@ function menuClick() {
 				'width': thisWidth
 			});
 
-		$('html,body').animate({scrollTop: sectionTop - $('.nav').height() - parseInt($('.section').css('padding-top')) }, 800);
+		$('html,body').animate({scrollTop: sectionTop - $('.nav').height()}, 800);
 	});
 }
 function apparence() {
