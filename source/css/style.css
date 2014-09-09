@@ -93,8 +93,6 @@ html{font-size:125%;}
 
 
 /* CONTACT */
-<<<<<<< HEAD
-.contact{background-color:rgb(0,102,153);}
 .contact div>div{display:inline-block;width:60%;vertical-align:top;text-align:start;margin-top:3rem;}
 .contact div>div:last-child{width:40%;padding-left:1rem;}
 .contact .img{width:64px;height:auto;}
