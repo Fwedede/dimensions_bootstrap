@@ -97,19 +97,45 @@ $(function() {
 	$('.cell').popover({
 		delay: { "show": 100, "hide": 100 },            		
 	});
-            	var xhr = new XMLHttpRequest();
-            // On souhaite juste récupérer le contenu du fichier, la méthode GET suffit amplement :
-            xhr.open('GET', 'source/js/realisations.json');
-            xhr.onreadystatechange = function () {
 
-            	$('.cell').click(function() {
-            		$.getJSON('source/js/realisations.json', function(donnees) {
-            			$('.popover-content').html('<p>' + donnees.titre + '</p>');
-            			$('.popover-content').append('<p>' + donnees.desc + '</p>');
-            			$('.popover-content').append('<p>' + donnees.image + '</p>');
-            		});
-});
-            }
+	var xhr = new XMLHttpRequest();
+	// On souhaite juste récupérer le contenu du fichier, la méthode GET suffit amplement :
+	xhr.open('GET', 'source/js/realisations.json');
+	xhr.onreadystatechange = function () {
+
+		$('.cell').click(function() {
+			$.getJSON('source/js/realisations.json', function(donnees) {
+				$('.popover-content').html('<p>' + donnees.titre + '</p>');
+				$('.popover-content').append('<p>' + donnees.desc + '</p>');
+				$('.popover-content').append('<p>' + donnees.image + '</p>');
+			});
+		});
+	}
+
+	/*
+	Alors.... Ce qui suit dans le commentaire marche, mais pas comme tu souhaites.
+	Lorsque tu cliques sur l'image, sa fait bien la requette et chercher le fichier json, le problème c'est qu'il n'arrive pas a lire toute les informations du json
+	Pour que sa marche j'ai du enlever des informations...
+
+	Deuxieme problème, c'est qu'il n'affiche pas du tout les informations au moment voulu. Sa intervient qu'au 2eme clique sur l'image
+	Je te laisse essayer le code j'ai mit des alerts pour que tu comprennes.
+
+
+	J'ai peut etre une solution pour les deux problèmes mais je suis fatigué ce soir donc je verrais ça demain.
+
+	J'ai mit en commentaire ce que tu avais fait pour pas perdre, sa pourrait etre utile !
+	*/
+
+	$('.cell').click(function() {
+		$.getJSON('source/js/realisations.json', function(donnees) {
+			$('.popover-content').html('<p>' + donnees.titre + '</p>');
+			$('.popover-content').append('<p>' + donnees.desc + '</p>');
+			// L'image est en commentaire vu qu'elle existe pas encore et qu'il va mettre un message d'erreur sinon
+			//$('.popover-content').append('<p>' + donnees.image + '</p>');
+			alert('Petite alerte pour voir les infos');
+		});
+	});
+	
 	$('.mini_perform a').tooltip({
 	délai: {show: 500, hide: 100}
 	});
