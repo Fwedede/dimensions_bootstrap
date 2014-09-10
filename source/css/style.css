@@ -54,10 +54,10 @@ html{font-size:125%;}
 .header .title{border-bottom:3px solid white;text-align:center;width:100%;}
 .header .txt{color:white;font-size:2.4rem;text-align:center;}
 .header .title .img{height:auto;margin:2rem 0;width:100%;}
-.nav{background-color:rgb(255,255,255);font-weight:bold;height:3rem;top:0;position:relative;z-index:1000;}
-.nav .logo{display:inline-block;position:relative;top:2;z-index:1000;}
+.nav{background-color:rgb(255,255,255);font-weight:bold;height:4rem;top:0;position:relative;z-index:1000;}
+.nav .logo{display:inline-block;position:relative;top:11;z-index:1000;}
 .menu{display:inline-block;font-size:1rem;text-align:right;}
-.menu .link{display:inline-block;height:3rem;line-height:2.7rem;padding:.3rem .6rem;position:relative;z-index:1000;}
+.menu .link{display:inline-block;height:4rem;line-height:3.2rem;padding:.3rem .6rem;position:relative;z-index:1000;}
 .menu .link:nth-child(1){border:0 solid rgb(204,0,51);}
 .menu .link:nth-child(2){border:0 solid rgb(0,204,153);}
 .menu .link:nth-child(3){border:0 solid rgb(255,204,0);}
@@ -66,7 +66,7 @@ html{font-size:125%;}
 .menu .link:not(.actif){color:rgb(102,102,102);}
 .menu .link:not(.actif):hover{border-bottom-width:4px;text-decoration:none;}
 
-.check{bottom:0;display:inline-block;height:3rem;position:absolute;right:8%;top:0;width:5rem;z-index:100;}
+.check{bottom:0;display:inline-block;height:4rem;position:absolute;right:8%;top:0;width:5rem;z-index:100;}
 
 /* BLOCK */
 .section{text-align:center;width:100%;padding:2rem 0;font-size:1rem;position:relative;}
@@ -81,8 +81,8 @@ html{font-size:125%;}
 /* REALISATIONS */
 #realisations .tab{width:100%;}
 #realisations .tab .colonne{display:inline-block;width:32%;vertical-align:top;}
-#realisations .tab .cell{display:block;margin:0.2rem;width:100%;border-radius:0px;border:none;position:relative;}
-#realisations .tab .cell:hover {background-color:transparent;}
+#realisations .tab .cell{display:block;margin:0.2rem;width:100%;border-radius:0px;border:none;position:relative;padding:0;}
+#realisations .tab .cell:hover {background-color:transparent;border:none;}
 #realisations .tab .cell .description {display:none;background:rgb(255,255,255);opacity:.5;min-height:5rem;width:100%;white-space:normal;position:absolute;bottom:0;left:0;text-align:justify;padding:.2rem;}
 #realisations .tab .cell:hover .description {display:block;}
 #realisations .tab .size1{height:9rem;}
@@ -110,5 +110,5 @@ html{font-size:125%;}
 .form-input{height:2rem;}
 .form-area{min-height:7rem;}
 .form-input[type=button], .form-input[type=reset], .form-input[type=submit]{box-shadow:0 -3px rgba(0,0,0,0.5) inset;border:0;text-align:center;cursor:pointer;border-radius:0;}
-.form-input[type=submit], .form-btn[type=submit]{background:url(../images/btn_Valider.png) rgb(0,102,153);border:3px solid rgb(0,41,79);position:absolute;right:0;}
+.form-input[type=submit], .form-btn[type=submit]{background:url(../images/btn_Valider.png) rgb(0,102,153);border:3px solid rgb(0,41,79);/*position:absolute;right:0;bottom:0;*/}
 .form-btn[type=submit]:hover{background:rgb(0,41,79);opacity:0.8;color:#fff;}
