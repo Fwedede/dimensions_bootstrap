@@ -94,10 +94,19 @@ $(function() {
 	menuClick();
 	apparence();
 
-	$('.cell').popover({
-		delay: { "show": 100, "hide": 100 },
+		$.getJSON('source/js/realisations.json', function(data) {
+			var titre = data[0].titre,
+				image = data[0].image,
+				contenu = data[0].desc;
+			//$('.popover-content').append('<p>' + data[0].desc + '</p>');
+			// L'image est en commentaire vu qu'elle existe pas encore et qu'il va mettre un message d'erreur sinon
+			//$('.popover-content').append('<p>' + data.image + '</p>');
+		$('.cell').popover({
+			delay: { "show": 100, "hide": 100 },
+			title: titre,
+			content: contenu+image
+		});
 	});
-
 	/*
 	var xhr = new XMLHttpRequest();
 	// On souhaite juste récupérer le contenu du fichier, la méthode GET suffit amplement :
@@ -105,10 +114,10 @@ $(function() {
 	xhr.onreadystatechange = function () {
 
 		$('.cell').click(function() {
-			$.getJSON('source/js/realisations.json', function(donnees) {
-				$('.popover-content').html('<p>' + donnees.titre + '</p>');
-				$('.popover-content').append('<p>' + donnees.desc + '</p>');
-				$('.popover-content').append('<p>' + donnees.image + '</p>');
+			$.getJSON('source/js/realisations.json', function(data) {
+				$('.popover-content').html('<p>' + data.titre + '</p>');
+				$('.popover-content').append('<p>' + data.desc + '</p>');
+				$('.popover-content').append('<p>' + data.image + '</p>');
 			});
 		});
 	}
@@ -119,15 +128,6 @@ $(function() {
 	J'ai mit en commentaire ce que tu avais fait pour pas perdre, sa pourrait etre utile !
 	*/
 
-	$('.cell').click(function() {
-		$.getJSON('source/js/realisations.json', function(donnees) {
-			$('.popover-content').html('<p>' + donnees[0].titre + '</p>');
-			$('.popover-content').append('<p>' + donnees[0].desc + '</p>');
-			// L'image est en commentaire vu qu'elle existe pas encore et qu'il va mettre un message d'erreur sinon
-			//$('.popover-content').append('<p>' + donnees.image + '</p>');
-			alert('Petite alerte pour voir les infos');
-		});
-	});
 	
 	$('.mini_perform a').tooltip({
 	délai: {show: 500, hide: 100}
