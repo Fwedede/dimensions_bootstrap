@@ -96,7 +96,7 @@ $(function() {
 
 		$.getJSON('source/js/realisations.json', function(data) {
 			var titre = data[0].titre,
-				image = data[0].image,
+				image = $(this).html('<p>' + data[0].image + '</p>'),
 				contenu = data[0].desc;
 			//$('.popover-content').append('<p>' + data[0].desc + '</p>');
 			// L'image est en commentaire vu qu'elle existe pas encore et qu'il va mettre un message d'erreur sinon
