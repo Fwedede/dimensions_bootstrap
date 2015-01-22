@@ -5,7 +5,7 @@
 		<title>Dimensions - Local</title>
 		<link rel="icon" type="image/png" href="img/favicon.png">
 		<link href='http://fonts.googleapis.com/css?family=Exo' rel='stylesheet' type='text/css'>
-		<!--link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css"-->
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
 		<!--link rel="stylesheet" href="source/css/style.css"-->
 		<link rel="stylesheet/less" href="css/dimensions.less">
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -15,14 +15,14 @@
 
 
 	<body>
-		<section class="section home">
+		<header class="header home">
 			<section class="section">
 				<div id="home">
-					<h1 class="title"><img class="img" src="img/logoDimensions2.gif" alt="Dimensions_logo"></h1>
+					<h1><img class="img" src="img/logoDimensions2.gif" alt="Dimensions_logo"></h1>
 					<div class="txt">Donnez une autre dimension à votre image</div>
 				</div>
 			</section>
-		</section>
+		</header>
 
 		<nav class="nav bg-white centre">
 			<div class="logo">
@@ -36,19 +36,19 @@
 			</div>
 		</nav>
 
-		<section class="section qui-suis-je">
-			<div class="block">
-				<h1 class="title">Qui suis-je?</h1>	
+		<main>
+			<section id="qui-suis-je" class="section">
+				<h1 class="title">Qui suis-je?</h1>
 				<article class="article">
 					<p>
-						Passionnée de design, mon cursus professionnel en a l’empreinte quelqu’en&nbsp;soit le support ou la dimension.<br/><br/>
+						Passionnée de design, mon cursus professionnel en a l’empreinte quelqu’en&nbsp;soit le support ou la dimension.<br><br>
 						En passant par le print, le web ou la décoration, l’image est primordiale, de la création d’un logo, d’un site web ou d’un agencement.
 					</p><br>
 					<p class="right">Frédérique CLEMENT</p><br>
 					<div id="performances">
 						<h2>Mes compétences</h2>
 						<div class="mini_perform block-white">
-							<h3 class="clr-gray">Print</h3>
+							<h2 class="clr-gray">Print</h2>
 							<button type="button" class="btn btn-default chart" data-toggle="tooltip" title="Adobe Photoshop CS5: logiciel de retouche, de traitement et de dessin sur ordinateur." data-placement="bottom" data-percent="70">
 								<img src="img/Ps.png" alt="Logo_Photoshop">
 							</button><!--
@@ -60,7 +60,7 @@
 							</button>
 						</div>
 						<div class="mini_perform block-white">
-							<h3 class="clr-gray">Web</h3>
+							<h2 class="clr-gray">Web</h2>
 							<button type="button" class="btn btn-default chart" data-toggle="tooltip" title="Adobe Dreamweaver CS5: éditeur de site web." data-placement="bottom" data-percent="80">
 								<img src="img/Dw.png" alt="Logo_Dreamweaver">
 							</button><!--
@@ -75,7 +75,7 @@
 							</button>
 						</div>		
 						<div class="mini_perform block-white">
-							<h3 class="clr-gray">Décoration</h3>
+							<h2 class="clr-gray">Décoration</h2>
 							<button type="button" class="btn btn-default chart" data-toggle="tooltip" title="AutoCad: logiciel de dessin assisté par ordinateur (DAO) pour la 2D et le 3D." data-placement="bottom" data-percent="80">
 								<img src="img/AutoCad.png" alt="Logo_AutoCad">
 							</button><!--
@@ -85,42 +85,36 @@
 						</div>
 					</div>
 				</article>
-			</div>
-			<div class="photo"></div>
-		</section>
+			</section>
 
-		<section class="section realisations">
-			<div id="realisations" class="block">
+			<section id="realisations" class="section">
 				<h1 class="title">Mes réalisations</h1>
 				<?php require('app/realisations.php');?>
-			</div>
-		</section>
+			</section>
 
-		<section class="section services">
-			<div id="services" class="block">
+			<section id="services" class="section">
 				<h1 class="title">Mes services</h1>
-				<div class="package">
-					<h2>Voici trois packages pour répondre à vos besoins en matière d'image</h2>
-					<div class="block-white clr-gray">
+				<p>Voici trois packages pour répondre à vos besoins en matière d'image</p>
+				<div class="table">
+					<div class="package">
 						<img src="img/Package01.png">
-						<h3>Une dimension Visuelle</h3>
+						<h2 class="title">Une dimension Visuelle</h2>
 						<p>Communiquer sous plusieurs formes pour une entreprise ou un produit avec une identité visuelle, un logo, des affiches, des flyers, des cartes de visites mais aussi avec un site web.</p>
 					</div>
-					<div class="block-white clr-gray">
+					<div class="package">
 						<img src="img/Package02.png">
-						<h3>Une dimension Agencée</h3>
+						<h2 class="title">Une dimension Agencée</h2>
 						<p>En plus du package Dimension Visuelle, un agencement et une décoration en adéquation avec votre identité visuelle pour une entreprise, un produit ou tout autre évèmement.</p>
 					</div>
-					<div class="block-white clr-gray">
+					<div class="package">
 						<img src="img/Package03.png">
-						<h3>Une dimension Évènementielle</h3>
+						<h2 class="title">Une dimension Évènementielle</h2>
 						<p>Célébrer un évènement personnel(mariages, anniversaires, babyshower,...) ou professionnel avec une identité visuelle et une décoration en rapport avec un thème.</p>
 					</div>
 				</div>
-			</div>
-		</section>
+			</section>
 
-		<section id="contact" class="section">
+			<section id="contact" class="section">
 				<h1 class="title">Contactez-moi</h1>
 				<p>Besoin de me contacter sur mes services, mon agence ou tout autre chose, c'est ici</p>
 				<div class="form">
@@ -144,15 +138,14 @@
 					<a href="http://fr.linkedin.com/pub/frederique-clement/95/a06/434/" target="_blank"><img class="img" src="img/LogoLinkedin.png" alt="LogoLinkedin"></a>
 					<a href="http://fr.pinterest.com/Fwedede/" target="_blank"><img class="img last" src="img/LogoPinterest.png" alt="LogoPinterest"></a>
 				</div>
-		</section>
+			</section>
+		</main>
 
 		<footer class="section footer">
-			<div class="block">
-				<p>Agence Dimensions - Créatrice d'une dimension visuelle, agencée ou évenementielle pour votre image.</p>
-				<div class="fb-like" data-href="https://www.facebook.com/pages/Agence-Dimensions/965360680158140" data-send="false" data-layout="button_count" data-width="200" data-show-faces="false" data-font="segoe ui"></div>
-				<div class="g-plusone" data-href="https://plus.google.com/u/0/114364871015253242303"></div>
-				<p>© Copyright 2014 - Site développé par <a href="http://steeve-clement.fr/" target="_blank">Steeve "TokaLazy" Clément</a></p>	
-			</div>
+			<p>Agence Dimensions - Créatrice d'une dimension visuelle, agencée ou évenementielle pour votre image.</p>
+			<div class="fb-like" data-href="https://www.facebook.com/pages/Agence-Dimensions/965360680158140" data-send="false" data-layout="button_count" data-width="200" data-show-faces="false" data-font="segoe ui"></div>
+			<div class="g-plusone" data-href="https://plus.google.com/u/0/114364871015253242303"></div>
+			<p>© Copyright 2014 - Site développé par <a href="http://steeve-clement.fr/" target="_blank">Steeve "TokaLazy" Clément</a></p>	
 		</footer>
 
 		<div class="body"><img class="img" src="img/Grand_D.png" alt="Grand_D"></div>
@@ -160,10 +153,10 @@
 
 		<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
 		<script src="//cdnjs.cloudflare.com/ajax/libs/less.js/2.1.0/less.min.js"></script>
-		<!--script src ="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script-->
+		<script src ="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
 		<script type="text/javascript" src="http://cdnjs.cloudflare.com/ajax/libs/easy-pie-chart/2.1.4/jquery.easypiechart.min.js"></script>
-		<script type="text/javascript" src="js//jquery.popin.js"></script>
-		<script type="text/javascript" src="js//script.js"></script>
+		<script type="text/javascript" src="js/popin.js"></script>
+		<script type="text/javascript" src="js/script.js"></script>
 		<script>
 			(function(d, s, id) {
 			var js, fjs = d.getElementsByTagName(s)[0];

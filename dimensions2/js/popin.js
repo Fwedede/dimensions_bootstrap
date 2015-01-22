@@ -35,7 +35,7 @@ Fait pour : http://www.dimensions.com/
 
 					if(projet != undefined && projet != '') {
 
-						$.post('controller/popin.php', {'projet': projet}).done(function(res) {
+						$.post('app/popin.php', {'projet': projet}).done(function(res) {
 
 							$('.popin-bg').html(res);
 							$('.popin-bg').fadeIn(param.show);
