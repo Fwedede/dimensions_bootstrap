@@ -63,7 +63,7 @@ function apparence() {
 	});
 }
 function who() {
-	$('#performances .mini_perform .chart').easyPieChart({
+	$('.performances .mini_perform .chart').easyPieChart({
 		barColor: 'rgb(204,0,51)',
 		trackColor: 'rgb(204,204,204)',
 		scaleColor: false,

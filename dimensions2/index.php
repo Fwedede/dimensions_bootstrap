@@ -6,8 +6,8 @@
 		<link rel="icon" type="image/png" href="img/favicon.png">
 		<link href='http://fonts.googleapis.com/css?family=Exo' rel='stylesheet' type='text/css'>
 		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
-		<!--link rel="stylesheet" href="source/css/style.css"-->
-		<link rel="stylesheet/less" href="css/dimensions.less">
+		<!--link rel="stylesheet/less" href="css/dimensions.less"-->
+		<link rel="stylesheet" href="css/dimensions.css">
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	</head>
 
@@ -18,21 +18,21 @@
 		<header class="header home">
 			<section class="section">
 				<div id="home">
-					<h1><img class="img" src="img/logoDimensions2.gif" alt="Dimensions_logo"></h1>
+					<h1 class="title"><img class="img" src="img/logoDimensions2.gif" alt="Dimensions_logo"></h1>
 					<div class="txt">Donnez une autre dimension à votre image</div>
 				</div>
 			</section>
 		</header>
 
-		<nav class="nav bg-white centre">
+		<nav class="nav">
 			<div class="logo">
 				<a class="link" href="#home"><img class="img" src="img/logoDimensionsMenu.png" alt="Dimensions_menu"></a>
 			</div>
-			<div class="menu right">
-				<a class="link font-bold" href="#qui-suis-je">Qui suis-je?</a><!--
-				--><a class="link font-bold" href="#realisations">Réalisations</a><!--
-				--><a class="link font-bold" href="#services">Services</a><!--
-				--><a class="link font-bold" href="#contact">Contacts</a>
+			<div class="menu">
+				<a class="link" href="#qui-suis-je">Qui suis-je?</a><!--
+				--><a class="link" href="#realisations">Réalisations</a><!--
+				--><a class="link" href="#services">Services</a><!--
+				--><a class="link" href="#contact">Contacts</a>
 			</div>
 		</nav>
 
@@ -45,7 +45,7 @@
 						En passant par le print, le web ou la décoration, l’image est primordiale, de la création d’un logo, d’un site web ou d’un agencement.
 					</p><br>
 					<p class="right">Frédérique CLEMENT</p><br>
-					<div id="performances">
+					<div class="performances">
 						<h2>Mes compétences</h2>
 						<div class="mini_perform block-white">
 							<h2 class="clr-gray">Print</h2>
@@ -134,7 +134,7 @@
 					Dimensions<br>
 					<a class="link-u" href="tel:0642351092" target="_blank">06.42.35.10.92</a><br><br>
 					<a class="link-u" href="mailto:clementfj@gmail.com" target="_blank">clementfj@gmail.com</a><br><br>
-					<a href="https://www.facebook.com/pages/Agence-Dimensions/965360680158140" target="_blank"><img class="img first" src="img/LogoFacebook.png" alt="LogoFacebook"></a>
+					<a href="https://www.facebook.com/pages/Agence-Dimensions/965360680158140" target="_blank"><img class="img" src="img/LogoFacebook.png" alt="LogoFacebook"></a>
 					<a href="http://fr.linkedin.com/pub/frederique-clement/95/a06/434/" target="_blank"><img class="img" src="img/LogoLinkedin.png" alt="LogoLinkedin"></a>
 					<a href="http://fr.pinterest.com/Fwedede/" target="_blank"><img class="img last" src="img/LogoPinterest.png" alt="LogoPinterest"></a>
 				</div>
@@ -145,14 +145,14 @@
 			<p>Agence Dimensions - Créatrice d'une dimension visuelle, agencée ou évenementielle pour votre image.</p>
 			<div class="fb-like" data-href="https://www.facebook.com/pages/Agence-Dimensions/965360680158140" data-send="false" data-layout="button_count" data-width="200" data-show-faces="false" data-font="segoe ui"></div>
 			<div class="g-plusone" data-href="https://plus.google.com/u/0/114364871015253242303"></div>
-			<p>© Copyright 2014 - Site développé par <a href="http://steeve-clement.fr/" target="_blank">Steeve "TokaLazy" Clément</a></p>	
+			<p><br>© Copyright 2014 - Site développé par <a href="http://steeve-clement.fr/" target="_blank">Steeve "TokaLazy" Clément</a></p>	
 		</footer>
 
 		<div class="body"><img class="img" src="img/Grand_D.png" alt="Grand_D"></div>
 		<div class="popin-bg"></div>
 
 		<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
-		<script src="//cdnjs.cloudflare.com/ajax/libs/less.js/2.1.0/less.min.js"></script>
+		<!--script src="//cdnjs.cloudflare.com/ajax/libs/less.js/2.1.0/less.min.js"></script-->
 		<script src ="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
 		<script type="text/javascript" src="http://cdnjs.cloudflare.com/ajax/libs/easy-pie-chart/2.1.4/jquery.easypiechart.min.js"></script>
 		<script type="text/javascript" src="js/popin.js"></script>
