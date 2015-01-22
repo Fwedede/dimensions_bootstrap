@@ -1,0 +1,56 @@
+/***** Variable LESS
+*****/
+@white:	#FFF;
+@gray:	#666;
+@red:		#C03;
+@green:	#0C9;
+@yellow:	#FC0;
+@blue:	#069;
+
+
+
+
+*{-o-box-sizing:border-box;-moz-box-sizing:border-box;-ms-box-sizing:border-box;-webkit-box-sizing:border-box;box-sizing:border-box;font-family:'Exo';margin:0;padding:0;color:@white;}
+html{font-size:125%;}
+a, a:hover{text-decoration:none !important;color:@white;}
+
+.home, .footer{background:@gray;}
+.qui-suis-je{background:@red;}
+.realisations{background:@green;}
+.services{background:@yellow;}
+#contact{background:@blue;}
+
+.link-u:hover{text-decoration:underline !important;}
+
+
+.footer{text-align:center;}
+
+.section{font-size:1rem;padding:2rem 15%;text-align:center;}
+.title{border-bottom:4px solid @white;padding-bottom:1.4rem;margin-bottom:2.8rem;font-weight:bold;}
+
+#contact div{display:inline-block;margin-top:3rem;vertical-align:top;width:60%;}
+#contact .link:hover{color:#fff;}
+#contact .coord{padding-left:1rem;width:40%;text-align:right;}
+#contact .coord .img{height:auto;width:64px;border:2px solid transparent;margin:0 1rem;}
+#contact .coord .img.first{margin-left:0;}
+#contact .coord .img.last{margin-right:0;}
+#contact .coord .img:hover{border-color:@white;cursor:pointer;opacity:.7;}
+
+.form{position:relative;}
+.form-input, .form-area{border:1px solid #808080;box-shadow:-.1rem -.1rem .2rem #999 inset;color:#333;margin:0 0 .6rem;padding:.2rem .4rem;width:100%;font-size:1rem;}
+.form-input:focus, .form-area:focus{outline:3px solid #00294F;}
+.form-label{display:block;text-align:left;}
+.form-input{height:2rem;}
+.form-area{max-height:18rem;max-width:100%;min-height:9rem;min-width:100%;}
+.form-btn[type=submit]{background:url(../img/btn_Valider.png) #069;border:2px solid #00294F;display:inline-block;padding:6px 12px;text-align:center;white-space:nowrap;vertical-align:middle;cursor:pointer;float:right;}
+.form-btn[type=submit]:hover{background:#00294F;color:#fff;opacity:0.8;}
+
+
+@media (max-width:767px) { // Smartphone
+}
+@media (min-width:768px) and (max-width:991px) { // Tablette
+}
+@media (min-width:992px) and (max-width:1199px) { // Ordinateur
+}
+@media (min-width:1200px) { // TV
+}

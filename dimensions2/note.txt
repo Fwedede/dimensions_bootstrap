@@ -1,0 +1,3 @@
+- Est-ce que ce serait pas mieux que le menu soit de la même couleur que "l'accueil" (gris) plutôt que blanc ?
+- Est-ce qu'un titre est forcement nécessaire pour le formulaire de contact ?
+- Peut-être mettre les reseaux sociaux dans le footer (maintenant qu'il y en a un, histoire de le remplir) ? 

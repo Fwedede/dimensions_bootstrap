@@ -1,0 +1,22 @@
+[
+  {
+    "titre": "Projet n°1",
+    "desc": "Description n°1",
+    "image": "<img src='source/images/vignettes/Vignettes_01.png' alt='image1'>"
+  },
+  {
+    "titre": "Projet n°2",
+    "desc": "Description n°2",
+    "image": "<img src='/images/img2.png' alt='image2'>"
+  },
+  {
+    "titre": "Projet n°3",
+    "desc": "Description n°3",
+    "image": "<img src='/images/img3.png' alt='image3'>"
+  },
+  {
+    "titre": "Projet n°4",
+    "desc": "Description n°4",
+    "image": "<img src='/images/img4.png' alt='image4'>"
+  }
+]
