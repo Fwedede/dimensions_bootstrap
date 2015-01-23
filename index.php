@@ -146,7 +146,7 @@
 			<p><br>© Copyright 2014 - Site développé par <a href="http://steeve-clement.fr/" target="_blank">Steeve "TokaLazy" Clément</a></p>	
 		</footer>
 
-		<div class="body"><img class="img" src="img/Grand_D.png" alt="Grand_D"></div>
+		<img class="body img" src="img/Grand_D.png" alt="Grand_D">
 		<div class="popin-bg"></div>
 
 		<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
