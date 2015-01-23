@@ -2,11 +2,11 @@
 html{font-size:125%;}
 a, a:hover{text-decoration:none !important;color:#FFF;}
 
-.home, .footer{background:#666;}
-#qui-suis-je{background:url(../img/photoMoi.png) no-repeat top right, #C03;}
-#realisations{background:#0C9;}
-#services{background:#FC0;}
-#contact{background:#069;}
+#home, .footer{background:#f00;}
+#qui-suis-je{background:url(../img/photoMoi.png) no-repeat top right, #0ff;}
+#realisations{background:#00f;}
+#services{background:#ff0;}
+#contact{background:#f0f;}
 
 .link-u:hover{text-decoration:underline !important;}
 .right{float:right;}
@@ -23,8 +23,9 @@ h2.title{margin-bottom:1rem;font-weight:normal;text-decoration:underline;display
 
 
 /* HEADER */
-.header .title .img{width:100%;}
-.header .txt{font-size:2.5rem;}
+#home section{position:relative;}
+#home .title .img{width:100%;}
+#home .txt{font-size:2.4rem;}
 
 /* NAVIGATION */
 .nav{background:#fff;font-weight:bold;height:4rem;position:relative;top:0;z-index:1000;padding:0 8%;width:100%;}

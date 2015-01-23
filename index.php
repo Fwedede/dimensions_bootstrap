@@ -15,12 +15,10 @@
 
 
 	<body>
-		<header class="header home">
-			<section class="section">
-				<div id="home">
-					<h1 class="title"><img class="img" src="img/logoDimensions2.gif" alt="Dimensions_logo"></h1>
-					<div class="txt">Donnez une autre dimension à votre image</div>
-				</div>
+		<header id="home" class="section">
+			<section>
+				<h1 class="title"><img class="img" src="img/logoDimensions2.gif" alt="Dimensions_logo"></h1>
+				<div class="txt">Donnez une autre dimension à votre image</div>
 			</section>
 		</header>
 
