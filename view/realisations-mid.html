@@ -1,5 +1,7 @@
-<div class="cell" popin-projet="<?php echo $res['id'];?>">
-	<img src="img/projets/<?php echo $res['image'];?>.png" alt="">
+<div class="cell" popin-projet="<?php echo $res['id_projet'];?>">
+	<div class="img_package" style="background-image:url(img/projets/<?php echo $res['image'];?>.jpg)">
+		<img src="<?php echo $res['img_package'];?>.png" alt=""></div>
+	
 	<div class="description">
 		<h3><?php echo ucfirst($res['titre']);?></h3>
 		<p><?php echo $res['description'];?></p>

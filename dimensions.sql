@@ -2,10 +2,10 @@
 -- version 3.5.1
 -- http://www.phpmyadmin.net
 --
--- Client: localhost
--- Généré le: Mer 24 Septembre 2014 à 15:34
--- Version du serveur: 5.5.24-log
--- Version de PHP: 5.4.3
+-- Host: localhost
+-- Generation Time: Mar 25, 2015 at 06:48 PM
+-- Server version: 5.5.24-log
+-- PHP Version: 5.3.13
 
 SET SQL_MODE="NO_AUTO_VALUE_ON_ZERO";
 SET time_zone = "+00:00";
@@ -17,58 +17,34 @@ SET time_zone = "+00:00";
 /*!40101 SET NAMES utf8 */;
 
 --
--- Base de données: `dimensions`
+-- Database: `dimensions`
 --
 
 -- --------------------------------------------------------
 
 --
--- Structure de la table `dimensions_carousel`
+-- Table structure for table `realisations`
 --
 
-CREATE TABLE IF NOT EXISTS `dimensions_carousel` (
-  `id` int(11) NOT NULL AUTO_INCREMENT,
-  `id_projet` int(11) NOT NULL,
-  `image` varchar(32) COLLATE utf8_bin NOT NULL,
-  `infos` varchar(128) COLLATE utf8_bin NOT NULL,
-  PRIMARY KEY (`id`),
-  UNIQUE KEY `image` (`image`)
-) ENGINE=InnoDB  DEFAULT CHARSET=utf8 COLLATE=utf8_bin AUTO_INCREMENT=8 ;
+CREATE TABLE IF NOT EXISTS `realisations` (
+  `id` int(8) NOT NULL,
+  `img_package` varchar(256) COLLATE utf8_bin NOT NULL,
+  `titre` varchar(256) COLLATE utf8_bin NOT NULL,
+  `image` varchar(256) COLLATE utf8_bin NOT NULL,
+  `infos` varchar(256) COLLATE utf8_bin NOT NULL,
+  `description` varchar(256) COLLATE utf8_bin NOT NULL,
+  `package` int(8) NOT NULL,
+  `id_projet` int(11) NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_bin;
 
 --
--- Contenu de la table `dimensions_carousel`
+-- Dumping data for table `realisations`
 --
 
-INSERT INTO `dimensions_carousel` (`id`, `id_projet`, `image`, `infos`) VALUES
-(1, 1, 'pack2/appart-expo_01', 'Planche d''ambiance'),
-(2, 1, 'pack2/appart-expo_02', 'Planche d''inspiration'),
-(3, 1, 'pack2/appart-expo_03', 'Coupe'),
-(4, 1, 'pack2/appart-expo_04', 'Vue Sketchup - Chambre'),
-(5, 1, 'pack2/appart-expo_05', 'Vue Sketchup - Salon n°1'),
-(6, 1, 'pack2/appart-expo_06', 'Vue Sketchup - Salon n°2'),
-(7, 1, 'pack2/appart-expo_07', 'Vue Sketchup - Cuisine');
-
--- --------------------------------------------------------
-
---
--- Structure de la table `dimensions_realisations`
---
-
-CREATE TABLE IF NOT EXISTS `dimensions_realisations` (
-  `id` int(11) NOT NULL AUTO_INCREMENT,
-  `titre` varchar(64) NOT NULL,
-  `image` varchar(64) NOT NULL,
-  `description` varchar(128) NOT NULL,
-  PRIMARY KEY (`id`),
-  UNIQUE KEY `titre` (`titre`,`description`)
-) ENGINE=InnoDB  DEFAULT CHARSET=latin1 AUTO_INCREMENT=2 ;
-
---
--- Contenu de la table `dimensions_realisations`
---
-
-INSERT INTO `dimensions_realisations` (`id`, `titre`, `image`, `description`) VALUES
-(1, 'Projet Appart''Expo Ecolo', 'pack2/appart-expo', 'C''est un projet de décoration sur le thème de l''appart''expo écolo');
+INSERT INTO `realisations` (`id`, `img_package`, `titre`, `image`, `infos`, `description`, `package`, `id_projet`) VALUES
+(1, 'img/Vignettes_pack2', 'Appart''Expo', 'pack2_appart-expo_01', 'Planche d''ambiance', 'C''est un projet de décoration sur le thème de l''appart''expo écolo', 2, 1),
+(1, 'img/Vignettes_pack1', '', '', '', '', 1, 2),
+(3, 'img/Vignettes_pack2', 'Appart''Expo', 'pack2_appart-expo_02', 'Planche d''inspiration', '', 2, 1);
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
 /*!40101 SET CHARACTER_SET_RESULTS=@OLD_CHARACTER_SET_RESULTS */;

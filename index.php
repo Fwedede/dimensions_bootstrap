@@ -4,11 +4,12 @@
 		<meta charset="utf-8">
 		<title>Dimensions - Local</title>
 		<link rel="icon" type="image/png" href="img/favicon.png">
-		<link href='http://fonts.googleapis.com/css?family=Exo' rel='stylesheet' type='text/css'>
+		<link href="http://fonts.googleapis.com/css?family=Exo" rel="stylesheet" type="text/css">
 		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
-		<!--link rel="stylesheet/less" href="css/dimensions.less"-->
-		<link rel="stylesheet" href="css/dimensions.css">
+		<link rel="stylesheet/less" type="text/css" href="css/dimensions.less">
+		<!--link rel="stylesheet" type="text/css" href="css/dimensions.css"-->
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<script src="js/less.min.js" type="text/javascript"></script>
 	</head>
 
 	<div id="fb-root"></div>

@@ -9,7 +9,7 @@ catch(Exception $e) {
 }
 
 $bdd->exec("SET CHARACTER SET utf8");
-$req = $bdd->query("SELECT * FROM dimensions_realisations WHERE id = '".intval($_POST['projet'])."'");
+$req = $bdd->query("SELECT * FROM realisations WHERE id_projet = '".intval($_POST['projet'])."'");
 
 if($res = $req->fetch())
 	require('../view/popin.html');

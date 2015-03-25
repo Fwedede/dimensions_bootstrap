@@ -97,8 +97,8 @@ $(function() {
 						trackColor: 'rgb(204,204,204)',
 						scaleColor: false,
 						lineCap: 'butt',
-						lineWidth: 5,
-						size: 80,
+						lineWidth: 3,
+						size: 60,
 						animate: 5000
 					});
 				}
