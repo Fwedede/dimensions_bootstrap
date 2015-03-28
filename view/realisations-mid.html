@@ -1,10 +1,10 @@
-<button type="button" class="btn btn-default cell" popin-projet="<?php echo $res['id'];?>">
-	<img src="source/images/projets/<?php echo $res['image'];?>.png" alt="">	
+<div class="cell" popin-projet="<?php echo $res['id_projet'];?>">
+	<div class="img_package" style="background-image:url(img/projets/<?php echo $res['image'];?>.png)">
+		<img src="<?php echo $res['img_package'];?>.png" alt=""></div>
+	
 	<div class="description">
-		<h4><?php echo ucfirst($res['titre']);?></h4>
+		<h3><?php echo ucfirst($res['titre']);?></h3>
 		<p><?php echo $res['description'];?></p>
 	</div>
 	<span class="vignette"></span>
-
-</button>
-
+</div>

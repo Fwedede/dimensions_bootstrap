@@ -1,0 +1,25 @@
+﻿- Est-ce que ce serait pas mieux que le menu soit de la même couleur que "l'accueil" (gris) plutôt que blanc ?
+	-> En fait j'aimerais qu'il soit en transparence sur la home
+- Est-ce qu'un titre est forcement nécessaire pour le formulaire de contact ?
+	-> Non ce n'est pas forcément nécessaire, mais au moins je sais tout de suite de quoi il s'agit, donc laisse-le pour l'instant
+- Peut-être mettre les reseaux sociaux dans le footer (maintenant qu'il y en a un, histoire de le remplir) ? 
+	-> Pourquoi pas, mais ça fera vide dans la page contact, je vais y réfléchir
+
+
+Pour la BDD, voilà ce que je vais faire de mon coté pour les images et CSS:
+	- 3 images types pour les différents packages
+	- une classe pour chaque package
+	- 3 dossiers dans le répertoire "projets" ou je déposerai les images en fonction des packages
+	- une nomenclature pour les images du style "typedepackage_nomduprojet_numéro
+De ton coté, j'aimerais que tu fasses:
+	- une table commune pour l'affichage sur la page Réalisations et le carousel. La première image sera une des images du projet, il faudra juste prendre la première
+	- une verifiaction de la nomenclature des images avant de les traiter
+	- la table devra comporter:
+		- le nom du projet
+		- le type de package
+		- la description qui sera la même sur la page et dans la popin
+		- le nom de l'image
+		- la légende de l'image
+Dis-moi si c'est faisable d'avoir qu'un seule table ? 
+Et si tu vois qu'il manque quelque chose ?
+Par la suite,l'idéal serait que je charge un fichier csv directement
