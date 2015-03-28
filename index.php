@@ -18,14 +18,14 @@
 	<body>
 		<header id="home" class="section">
 			<section>
-				<h1 class="title"><img class="img" src="img/logoDimensions2.gif" alt="Dimensions_logo"></h1>
+				<h1 class="title"><img class="img" src="img/logoDimensions2.gif" srcset="img/logoDimensions_680.gif 1024w" alt="Dimensions_logo"></h1>
 				<div class="txt">Donnez une autre dimension à votre image</div>
 			</section>
 		</header>
 
 		<nav class="nav">
 			<div class="logo">
-				<a class="link" href="#home"><img class="img" src="img/logoDimensionsMenu.png" alt="Dimensions_menu"></a>
+				<a class="link" href="#home"><img class="img" src="img/logoDimensionsMenu.png" srcset="img/petitD.png 1024w" alt="Dimensions_menu"></a>
 			</div>
 			<div class="menu">
 				<a class="link" href="#qui-suis-je">Qui suis-je?</a><!--
@@ -96,17 +96,17 @@
 				<p>Voici trois packages pour répondre à vos besoins en matière d'image</p>
 				<div class="table">
 					<div class="package">
-						<img src="img/Package01.png">
+						<img src="img/Package01.png" srcset="img/Package01.png 1200w">
 						<h2 class="title">Une dimension Visuelle</h2>
 						<p>Communiquer sous plusieurs formes pour une entreprise ou un produit avec une identité visuelle, un logo, des affiches, des flyers, des cartes de visites mais aussi avec un site web.</p>
 					</div>
 					<div class="package">
-						<img src="img/Package02.png">
+						<img src="img/Package02.png" srcset="img/Package02.png 1200w">
 						<h2 class="title">Une dimension Agencée</h2>
 						<p>En plus du package Dimension Visuelle, un agencement et une décoration en adéquation avec votre identité visuelle pour une entreprise, un produit ou tout autre évèmement.</p>
 					</div>
 					<div class="package">
-						<img src="img/Package03.png">
+						<img src="img/Package03.png" srcset="img/Package03.png 1200w">
 						<h2 class="title">Une dimension Évènementielle</h2>
 						<p>Célébrer un évènement personnel(mariages, anniversaires, babyshower,...) ou professionnel avec une identité visuelle et une décoration en rapport avec un thème.</p>
 					</div>
@@ -133,9 +133,9 @@
 					Dimensions<br>
 					<a class="link-u" href="tel:0642351092" target="_blank">06.42.35.10.92</a><br><br>
 					<a class="link-u" href="mailto:clementfj@gmail.com" target="_blank">clementfj@gmail.com</a><br><br>
-					<a href="https://www.facebook.com/pages/Agence-Dimensions/965360680158140" target="_blank"><img class="img" src="img/LogoFacebook.png" alt="LogoFacebook"></a>
-					<a href="http://fr.linkedin.com/pub/frederique-clement/95/a06/434/" target="_blank"><img class="img" src="img/LogoLinkedin.png" alt="LogoLinkedin"></a>
-					<a href="http://fr.pinterest.com/Fwedede/" target="_blank"><img class="img last" src="img/LogoPinterest.png" alt="LogoPinterest"></a>
+					<a href="https://www.facebook.com/pages/Agence-Dimensions/965360680158140" target="_blank"><img class="img" src="img/LogoFacebook.png" srcset="img/LogoFacebook.png 3000w" alt="LogoFacebook"></a>
+					<a href="http://fr.linkedin.com/pub/frederique-clement/95/a06/434/" target="_blank"><img class="img" src="img/LogoLinkedin.png" srcset="img/LogoLinkedin.png 3000w" alt="LogoLinkedin"></a>
+					<a href="http://fr.pinterest.com/Fwedede/" target="_blank"><img class="img last" src="img/LogoPinterest.png" srcset="img/LogoPinterest.png 3000w" alt="LogoPinterest"></a>
 				</div>
 			</section>
 		</main>

@@ -47,6 +47,9 @@ h2.title{margin-bottom:1rem;font-weight:normal;text-decoration:underline;display
 .footer{padding-bottom:1rem;}
 .footer>*:last-child{font-size:.75rem;}
 
+p{.text;}
+h2 {font-size: 130%;}
+h3 {font-size: 120%;margin:10px 0;}
 
 /* HEADER */
 .header .title .img{width:100%;}
@@ -85,20 +88,23 @@ h2.title{margin-bottom:1rem;font-weight:normal;text-decoration:underline;display
 }
 .tooltip, .tooltip.bottom .tooltip-arrow, .tooltip .tooltip-inner{background:@gray;border-bottom-color:@gray;}
 .tooltip-arrow{display:none;}
-p{.text;}
-h2 {font-size: 120%;}
+
 
 /* REALISATIONS */
 #realisations .tab{text-align:left;}
 #realisations .tab .cell{
 	display:inline-flex;margin:0.2rem;position:relative;width:32%;cursor:pointer;height:32%;
 	&:hover{background:transparent;}
-	.img_package {background-size:auto 100%;}
+	.img_package {background-size:auto 100%;background-position:50% 50%;background-color:@white;}
+	img{width:100%;height:100%;}
 }
-#realisations .tab .cell img{width:100%;height:100%;}
-#realisations .tab .cell .description{background:@white;bottom:0;display:none;left:0;min-height:5rem;opacity:.85;padding:.2rem;position:absolute;text-align:justify;white-space:normal;width:100%;font-size:.75rem;}
+#realisations .tab .cell .description{
+	background:@white;bottom:0;display:none;left:0;max-height:5rem;opacity:.85;padding:.2rem;position:absolute;width:100%;font-size:.75rem;
+	*{color:@gray;}
+	p {text-overflow:ellipsis;overflow:hidden;white-space:nowrap;width: 303px;}
+}
 #realisations .tab .cell:hover .description{display:block;}
-#realisations .tab .cell .description *{color:@gray;}
+.cell div.share{background:@white;left:0;position:absolute;top:0;}
 /*#realisations .tab .size1{height:9rem;}*/
 /*#realisations .tab .size2{height:12rem;}*/
 .popin-bg{background:rgba(128,128,128,.5);bottom:0;color:#333;display:none;left:0;position:fixed;right:0;top:0;z-index:10000;}
@@ -108,15 +114,17 @@ h2 {font-size: 120%;}
 .popin .close{position:absolute;right:1.5rem;top:1.5rem;}
 .popin .close .img{margin-left:.2rem;vertical-align:bottom;}
 .popin>.desc, .popin .carousel{display:inline-block;vertical-align:top;width:100%;}
-.popin>.desc{width:30%;}
-.popin>.carousel{text-align:center;width:70%;}
-.popin .carousel .img{margin:auto;width:auto;height:330px;}
-.popin .carousel .carousel-indicators{bottom:10px;}
-.popin .carousel .carousel-control{background:0;}
-.popin .carousel .carousel-caption{bottom:0;left:0;padding-bottom:40px;right:0;}
-.popin .carousel:hover .carousel-caption{background:rgba(255,255,255,.35);text-shadow:0 1px 4px #000, 0 -1px 4px #000;}
-.popin .carousel .carousel-control span{text-shadow:0 0 .3rem #000;}
-.cell div.share{background:@white;left:0;position:absolute;top:0;}
+.popin>.desc{width:30%;padding:10px 10px 10px 0;}
+.popin>.carousel{
+	text-align:center;width:70%;
+	.img{margin:auto;width:auto;height:330px;}
+	.carousel-indicators{bottom:0px;margin-bottom:0;}
+	.carousel-control{background:0;}
+	.carousel-caption{bottom:0px;left:0;padding-bottom:20px;right:0;color:@white;text-shadow:none;display:none;}
+}
+.popin .carousel:hover .carousel-caption{background:rgba(0,0,0,.20);display:block;}
+.popin .carousel .carousel-control span{color:@gray;}
+
 
 /* SERVICES */
 .table{margin-top:2rem;}
@@ -144,31 +152,34 @@ h2 {font-size: 120%;}
 
 @media (max-width:767px) { /* Smartphone */
 	*{-webkit-hyphens:auto;-moz-hyphens:auto;-ms-hyphens:auto;-o-hyphens:auto;hyphens:auto;word-break:break-word;}
-	html{font-size:80%;}
-	h1{font-size:1.8rem;}
-	h2{font-size:1.5rem;}
-	h3{font-size:1.2rem;}
-	h4, p{font-size:1rem;}
+	html{font-size:100%;}
+	h1, h1.title{font-size:110%; padding-bottom: 0.4rem;margin-bottom: 1.8rem;}
+	h2{font-size:105%;}
+	h3{font-size:90%;}
+	h4, p, .coord, label{font-size:80%;}
 	.body, .centre{padding:0 .2rem;width:auto;}
 	.body .img{width:100%;}
-	.nav .logo{top:0;width:10%;}
-	.logo .link .img{height:100%;visibility:hidden;width:100%;}
-	.logo .link{background:url(../images/petitD.png) no-repeat center center;}
-	.menu{font-size:14px;width:90%;}
-	.menu .link{padding:.1rem .3rem;}
+	.nav{padding:0 3%;height:3.9rem;}
+	.nav .logo{top:25%;width:25%;}
+	.logo .link .img{height:34%;width:34%;}
+	/*.logo .link{background:url(../img/petitD.png) no-repeat center center;}*/
+	.menu{font-size:14px;}
+	.menu .link{padding:.1rem .3rem;font-size:80%;}
+	.section{padding:5%;}
 	.section .photo{width:55%;}
 	.section .photo img{width:100%;}
 	.section .block{width:85%;}
+	#qui-suis-je{background-size:50% 50%;}
 	#qui-suis-je .article{width:100%;}
-	#qui-suis-je .mini_perform{text-align:center;}
+	#qui-suis-je .mini_perform{text-align:center;width:30%;}
 	.package div img{display:inline-block;width:40%;}
 	.package div{display:block;width:100%;}
 	.contact .img{width:30%;}
-	.contact .coord .img{margin:0;width:20%;}
+	#contact .coord .img{margin:0;width:auto;}
 	.contact #contact>div{display:block;margin-top:3rem;vertical-align:top;width:100%;}
 	.contact #contact>div:last-child{text-align:left;width:100%;}
 	#realisations .tab .cell .description{height:40%;}
-	#realisations .tab .cell{width:50%;}
+	#realisations .tab .cell{width:48%;}
 	#realisations p{display:none;}
 	.popin>.desc, .popin>.carousel{display:block;width:100%;}
 	.popin .carousel .carousel-caption{padding-bottom:0;}
