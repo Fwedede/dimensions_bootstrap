@@ -195,9 +195,12 @@ h3 {font-size: 120%;margin:10px 0;}
 
 
 /* Other CSS */
-#qui-suis-je{background:url(../img/photoMoi.png) no-repeat top right, @white;}
+#qui-suis-je{
+	background:url(../img/photoMoi.png) no-repeat top right, @white;color:@red;
+	p {color:@red;}
+}
 #realisations, #services, #contact{background:@white;}
-#qui-suis-je h1.title {color:@red;}
-#realisations h1.title {color:@green;}
-#services h1.title {color:@yellow;}
-#contact h1.title {color:@blue;}
+#qui-suis-je h1.title {color:@red;border-bottom:4px solid @red;}
+#realisations h1.title {color:@green;border-bottom:4px solid @green;}
+#services h1.title {color:@yellow;border-bottom:4px solid @yellow;}
+#contact h1.title {color:@blue;border-bottom:4px solid @blue;}
